@@ -1,0 +1,209 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Jal_Onuel';
+}
+
+@font-face {
+	font-family: 'Jal_Onuel';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#mainBody {
+	max-width: 1900px;
+	min-height: 1900px;
+	margin: 30px auto;
+	/* 확인용 background */
+	background-color: rgba(189, 189, 189, 0.18);
+}
+
+a {
+	text-decoration: none;
+	color: rgb(52, 52, 52);
+}
+
+header {
+	height: 200px;
+	margin: 30px;
+	padding: 40px;
+	box-sizing: border-box;
+	display: flex;
+	/* 확인용 background */
+	background-color: rgba(189, 189, 189, 0.536);
+}
+
+.Logo {
+	width: 130px;
+	padding: 30px;
+	/* 확인용 background */
+	background-color: rgba(0, 255, 255, 0.283);
+}
+
+.LogoName {
+	font-size: 50px;
+	text-decoration: none;
+}
+
+.headerText {
+	padding: 30px;
+	box-sizing: border-box;
+	/* 확인용 background */
+	background-color: rgba(127, 255, 212, 0.344);
+}
+
+#section1 {
+	height: 1000px;
+	margin: 30px auto;
+}
+
+.textBox {
+	display: none;
+	margin-left: 150px;
+	position: relative;
+	top: 300px;
+}
+
+h2 {
+	font-size: 50px;
+}
+
+#section2 {
+	height: 700px;
+	display: none;
+}
+
+article {
+	display: flex;
+}
+
+.contentUp, .contentDown {
+	width: 600px;
+	height: 250px;
+	margin: 30px;
+	box-sizing: border-box;
+	border-radius: 25px;
+	/* 확인용 background */
+	background-color: rgba(152, 237, 225, 0.707);
+}
+
+.contentInner {
+	width: 500px;
+	height: 230px;
+	margin: 10px auto;
+	border-radius: 25px;
+	background-color: rgba(130, 130, 130, 0.454);
+	transition: 1s;
+}
+
+.contentInner:hover {
+	transform: scale(1.2);
+}
+
+.login {
+	width: 300px;
+	height: 50px;
+	margin: 0 auto;
+	border-radius: 25px;
+}
+
+button[type="button"] {
+	width: 300px;
+	height: 100%;
+	font-size: 20px;
+	border-radius: 25px;
+	position: relative;
+	bottom: 40px;
+	border: none;
+	background-color: rgba(220, 219, 219, 0.652);
+	transition: 1s;
+}
+
+button[type="button"]:hover {
+	background-color: rgba(255, 255, 255, 0.509);
+	color: rgb(249, 188, 96);
+}
+
+/* -------------mediaquery Start----------- */
+@media ( max-width :700px) {
+	article {
+		display: block;
+	}
+	.contentUp {
+		width: 300px;
+		height: 300px;
+		padding: 20px;
+	}
+	.contentInner {
+		width: 250px;
+		height: 230px;
+	}
+}
+
+/*---------------------------------- footer start              */
+footer {
+	max-width: 1800px;
+	height: 300px;
+	/* TestBackground */
+	/* background-color: rgb(166, 146, 186); */
+}
+
+.footerBox {
+	width: inherit;
+	height: 200px;
+	/* margin: 0 auto; */
+
+	/* TestBackground */
+	/* background-color: aqua;  */
+}
+
+.innerfooterBox {
+	width: inherit;
+	padding-top: 50px;
+
+	/* TestBackground */
+	/* background-color: bisque; */
+}
+
+.footerUl1, .footerUl2, .footerUl3 {
+	width: inherit;
+	height: 40px;
+	color: rgb(92, 92, 92);
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	/* TestBackground */
+	/* background-color: rgba(157, 191, 191, 0.728);  */
+}
+
+.footerUl1 li a:last-child {
+	color: tomato;
+}
+
+.footerUl2 li {
+	font-size: 15px;
+	margin-top: 20px;
+
+	/* TestBackground */
+	/* background-color: rgba(157, 191, 191, 0.728);  */
+}
+
+li>span {
+	margin: 20px;
+}
+
+.footerUl3 {
+	width: 500px;
+	/* TestBackground */
+	/* background-color: rgba(157, 191, 191, 0.728); */
+}
+
+.footerUl3 li {
+	width: 200px;
+
+	/* TestBackground */
+	/* background-color: aqua; */
+}

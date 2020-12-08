@@ -1,0 +1,328 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'Jal_Onuel';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+i {
+	color: white;
+}
+
+#mainBody {
+	width: 1300px;
+	height: 600px;
+	margin: 30px auto;
+	font-family: 'Jal_Onuel';
+	/* background-color: rgb(55, 51, 45);  */
+}
+/* ----------------------------------  header               */
+a {
+	text-decoration: none;
+	color: rgb(52, 52, 52);
+}
+
+header {
+	width: 1300px;
+	height: 75px;
+	border-radius: 5px;
+	/* TestBackground */
+	background: #593f36b1;
+}
+
+nav {
+	width: 1180px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	/* TestBackground */
+	/* background-color: #ff6347; */
+}
+
+.logo, .logo>a {
+	width: 334px;
+	height: 100%;
+	text-align: center;
+	line-height: 70px;
+	color: white;
+	/* TestBackground */
+	/* background-color: rgb(194, 192, 190); */
+}
+
+.menuBox {
+	width: 240px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin: 0px auto;
+	/* TestBackground */
+	/* background-color: rgba(179, 233, 102, 0.419); */
+}
+
+.menuBox>a {
+	color: rgb(238, 240, 242);
+	line-height: 75px;
+	font-size: 1rem;
+	font-weight: 00;
+	transition: 0.6s;
+}
+
+.menuBox>a:hover {
+	color: tomato;
+}
+
+.loginBox {
+	display: flex;
+	width: 300px;
+	height: 100%;
+	/* TestBackground */
+	/* background-color: rgb(220, 144, 68); */
+}
+
+.loginName {
+	width: 107px;
+	text-align: right;
+	line-height: 75px;
+	margin: 0 auto;
+	/* TestBackground */
+	/* background-color: rgb(194, 192, 190);  */
+}
+
+.loginName {
+	color: white;
+	text-shadow: 3px 2px 4px rgb(13, 43, 10);
+}
+
+.mypage {
+	width: 100px;
+	margin: 0 auto;
+	padding-left: 5px;
+	padding-top: 5px;
+	line-height: 70px;
+	text-align: right;
+	/* TestBackground */
+	/* background-color: rgb(162, 153, 143); */
+}
+
+.mypage>i {
+	transition: 1s;
+	cursor: pointer;
+}
+
+.mypage>i:hover, .mypage a:hover {
+	color: #ff6347;
+}
+
+.userBox {
+	width: 150px;
+	height: 130px;
+	display: none;
+	background-color: #b5caf7d7;
+	border-radius: 15px;
+	position: absolute;
+	z-index: 1;
+	box-shadow: 4px 4px 6px rgba(50, 46, 46, 0.474);
+}
+
+.userBox>ul {
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+}
+
+.userBox>ul li {
+	width: 90%;
+	height: 30px;
+	margin-bottom: 5px;
+	list-style: none;
+	text-align: center;
+	color: rgb(133, 83, 9);
+	/* TestBackground */
+	/* background-color: red; */
+}
+
+.userBox>ul li>a {
+	position: relative;
+	/* top: -20px;*/
+	left: 10px;
+	text-align: center;
+	/* TestBackground */
+	/* background-color: aqua; */
+}
+
+.userBox:after {
+	content: "";
+	position: relative;
+	top: -181px;
+	left: -56px;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid #b5caf7d7;
+}
+
+.logOut {
+	width: 100px;
+	text-align: center;
+	line-height: 70px;
+	/* TestBackground */
+	/* background-color: rgb(194, 192, 190);  */
+}
+
+.logoutImg {
+	width: 50px;
+	height: 50px;
+	transition: 1s;
+	background-image: url("EXIT.png");
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+	background-position: 19px 18px;
+}
+
+.logoutImg:hover {
+	width: 100px;
+	height: 100%;
+	background-image: url("EXIT2.png");
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+	background-position: 19px 18px;
+}
+
+.hideNav {
+	width: 100%;
+	height: 240px;
+	display: none;
+	border-radius: 5px;
+	position: relative;
+	/* TestBackground */
+	background: #f2e6d466;
+	backdrop-filter: saturate(180%) blur(10px);
+}
+
+.innerhideNav {
+	display: flex;
+	width: 870px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	/* TestBackground */
+	/* background: rgb(172, 35, 35); */
+}
+
+.PermenuObject {
+	display: flex;
+	width: 800px;
+	margin: 0 auto;
+	/* TestBackground */
+	/* background: rgb(187, 135, 135); */
+}
+
+.menuObject {
+	width: 150px;
+	height: 220px;
+	list-style: none;
+	margin: 0 auto;
+	/* TestBackground */
+	/* background-color: aquamarine;   */
+}
+
+.menuObject>li {
+	width: 130px;
+	margin: 0 auto;
+	height: 60px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 50px;
+	/* TestBackground */
+	/* background-color: blue;    */
+}
+
+.menuObject li>a {
+	color: #735448;
+	transition: 0.5s;
+}
+
+.menuObject li>a:hover {
+	color: rgb(255, 153, 0);
+}
+/*----------------------------------  header end               */
+/*----------------------------------    mainSection              */
+#mainSection {
+	width: 1300px;
+	height: 1000px; 
+	/* TestBackground */
+	/* background-color: rgba(232, 216, 247, 0.31); */
+}
+/*-- 개인 css 설정 영역 --*/
+
+/*----------------------------------  mainSection              */
+/*---------------------------------- footer start              */
+footer {
+	max-width: 1800px;
+	height: 300px;
+	/* TestBackground */
+	/* background-color: rgb(166, 146, 186); */
+}
+
+.footerBox {
+	width: inherit;
+	height: 200px;
+	/* margin: 0 auto; */
+
+	/* TestBackground */
+	/* background-color: aqua;  */
+}
+
+.innerfooterBox {
+	width: inherit;
+	padding-top: 50px;
+
+	/* TestBackground */
+	/* background-color: bisque; */
+}
+
+.footerUl1, .footerUl2, .footerUl3 {
+	width: inherit;
+	height: 40px;
+	color: rgb(92, 92, 92);
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	/* TestBackground */
+	/* background-color: rgba(157, 191, 191, 0.728);  */
+}
+
+.footerUl1 li a:last-child {
+	color: tomato;
+}
+
+.footerUl2 li {
+	font-size: 15px;
+	margin-top: 20px;
+
+	/* TestBackground */
+	/* background-color: rgba(157, 191, 191, 0.728);  */
+}
+
+li>span {
+	margin: 20px;
+}
+
+.footerUl3 {
+	width: 500px;
+	/* TestBackground */
+	/* background-color: rgba(157, 191, 191, 0.728); */
+}
+
+.footerUl3 li {
+	width: 200px;
+
+	/* TestBackground */
+	/* background-color: aqua; */
+}
